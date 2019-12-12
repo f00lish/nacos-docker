@@ -40,7 +40,7 @@ RUN set -x \
 ADD bin/docker-startup.sh bin/docker-startup.sh
 ADD conf/application.properties conf/application.properties
 ADD init.d/custom.properties init.d/custom.properties
-
+ADD plugins/ /home/nacos/plugins/
 
 # set startup log dir
 RUN mkdir -p logs \
